@@ -18,9 +18,17 @@ class MyApp extends StatelessWidget {
           title: Text("Demo of Buttons"),
         ),
         body: Container(
-          child: TextButton(
-            onPressed: (){},
-            child: Text("Press Me"),
+          child: Row(
+            children: [
+              TextButton(
+              
+                onPressed: (){},
+                child: Text("New Button 1"),
+              ),
+
+              ElevatedButton(onPressed: (){},
+               child: Text("New Button 2"))
+            ],
           ),
         )),
     );
