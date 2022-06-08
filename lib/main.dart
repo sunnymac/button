@@ -20,13 +20,25 @@ class MyApp extends StatelessWidget {
         body: Container(
           child: Row(
             children: [
+            InkWell(
+              onTap: (){
+                
+                  print("Cutome Button Clicked");
+              },
+              child: Text("Cutom Button")),
               TextButton(
               
-                onPressed: (){},
+                onPressed: (){
+
+                  print("Text Button Clicked");
+                },
                 child: Text("New Button 1"),
               ),
 
-              ElevatedButton(onPressed: (){},
+              ElevatedButton(
+                onPressed: (){
+                print("Elevated  Button Clicked");
+              },
 
                child: Text("New Button 2"),),
 
