@@ -27,7 +27,11 @@ class MyApp extends StatelessWidget {
               ),
 
               ElevatedButton(onPressed: (){},
-               child: Text("New Button 2"))
+
+               child: Text("New Button 2"),),
+
+               Icon(Icons.account_box),
+               
             ],
           ),
         )),
